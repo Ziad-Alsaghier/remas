@@ -249,6 +249,7 @@ class CustomerAPIAuthController extends Controller
             $response = 'success';
         }
 
+            dd($response);
         if ($response == 'success') {
             return response()->json([
                 'message' => $response,

@@ -90,8 +90,8 @@ class InstallController extends Controller
             purchaseKey: $purchaseKey,
             softwareId: SOFTWARE_ID,
             softwareType: base64_decode('cHJvZHVjdA=='),
-            name: $request['name'],
-            identifier: $request['email'],
+            // name: $request['name'],
+            // identifier: $request['email'],
         );
         $this->updateActivationConfig(app: 'admin_panel', response: $response);
         $status = $response['active'] ?? 0;

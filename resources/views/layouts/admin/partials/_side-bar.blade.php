@@ -1271,7 +1271,7 @@
 
                 @if(getCheckAddonPublishedStatus(moduleName: 'AI'))
                     <li>
-                        <a class="nav-link nav-link-toggle {{
+                        {{-- <a class="nav-link nav-link-toggle {{
                                 Request::is('admin/third-party/ai-setting') || Request::is('admin/third-party/ai-setting/vendors-usage-limits') ? 'active' : '' }}"
                            href="{{ route('admin.third-party.ai-setting.index') }}" title="{{ translate('AI_Setup') }}">
                             <i class="fi fi-rr-microchip-ai"></i>
@@ -1281,7 +1281,7 @@
                                     {{ translate('AI_Setup') }}
                                 </span>
                             </span>
-                        </a>
+                        </a> --}}
                     </li>
                 @endif
 

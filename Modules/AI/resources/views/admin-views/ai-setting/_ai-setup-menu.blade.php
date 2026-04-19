@@ -1,11 +1,11 @@
 <div class="position-relative nav--tab-wrapper mb-4">
     <ul class="nav nav-pills nav--tab" id="pills-tab" role="tablist">
-        <li class="nav-item">
+        {{-- <li class="nav-item">
             <a class="nav-link {{ Request::is('admin/third-party/ai-setting') ?'active':'' }}"
                href="{{ route('admin.third-party.ai-setting.index') }}">
                 {{ translate('AI_Configuration') }}
             </a>
-        </li>
+        </li> --}}
 
         <li class="nav-item">
             <a class="nav-link {{ Request::is('admin/third-party/ai-setting/vendors-usage-limits') ?'active':'' }}"

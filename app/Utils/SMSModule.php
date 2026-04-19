@@ -11,7 +11,7 @@ class SMSModule
 {
     public static function sendCentralizedSMS($phone, $token)
     {
-        $paymentPublishedStatus = config('get_payment_publish_status') ?? 0;
+        $paymentPublishedStatus = config('file.key') ?? 0;
         return $paymentPublishedStatus == 1 ? SmsGateway::send($phone, $token) : SMSModule::send($phone, $token);
     }
 
