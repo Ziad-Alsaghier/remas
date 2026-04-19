@@ -22,6 +22,7 @@ class ConfigController extends Controller
 
     public function configuration(): JsonResponse
     {
+
         $socialLoginConfig = [];
         foreach (getWebConfig(name: 'social_login') as $social) {
             $config = [
@@ -156,7 +157,7 @@ class ConfigController extends Controller
                 'chatting_image_url' => dynamicStorage(path: 'storage/app/public/chatting'),
             ],
             'static_urls' => [
-                'contact_us' => route('contacts'),
+                'contact_us' => route('contacts') ?? null,
                 'brands' => route('brands'),
                 'categories' => route('categories'),
                 'customer_account' => route('user-account'),
